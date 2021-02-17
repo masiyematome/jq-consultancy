@@ -232,7 +232,7 @@ button{
 /**Services part of the project starts here**/
 
 .services{
-    padding : 30px 15px;
+    padding : 30px 25px;
 }
 
 .services h1{
@@ -251,9 +251,12 @@ button{
 }
 
 .services p{
-    padding : 35px 0px 5px;
     color : rgb(56, 56, 56);
     font-size : 14px; 
+}
+
+.services .intro-text{
+    padding : 35px 0px 5px;
 }
 
 .services-container{
@@ -262,4 +265,18 @@ button{
 
 .services-container .service{
     text-align : center;
+    padding : 35px 8px;
+    margin-top : 20px;
+    box-shadow : 2px 2px 10px 2px rgb(230, 230, 230);
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+
+.service:hover{
+    margin-top : 10px;
+}
+
+.service h3{
+    padding : 15px 0px;
+    color : #444444;
 }

@@ -28,6 +28,7 @@ button{
     justify-content: space-between;
     padding : 10px 15px 25px;
     box-shadow: 0 2px 8px -2px rgb(163, 163, 163);
+    height : 0%;
 
 }
 
@@ -226,4 +227,39 @@ button{
     position : fixed;
     right :3.2%;
     bottom : 3%;
+}
+
+/**Services part of the project starts here**/
+
+.services{
+    padding : 30px 15px;
+}
+
+.services h1{
+    position : relative;
+    display : inline;
+    padding : 8px 0px 15px;
+}
+
+.services h1::after{
+    content: "";
+    width : 30%;
+    border : 1px solid var(--green-color);
+    left : 0;
+    top : 100%;
+    position : absolute;
+}
+
+.services p{
+    padding : 35px 0px 5px;
+    color : rgb(56, 56, 56);
+    font-size : 14px; 
+}
+
+.services-container{
+    padding : 70px 0px 15px;
+}
+
+.services-container .service{
+    text-align : center;
 }

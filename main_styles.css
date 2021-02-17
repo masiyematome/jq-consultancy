@@ -66,6 +66,31 @@
     transition : all ease 0.5s;
 }
 
+.close-button{
+    position : absolute;
+    top : 5%;
+    left : 90%;
+    transform: translate(-5%,-90%);
+    color : white;
+    background-color: transparent;
+    outline : none;
+    border : none;
+    font-size : 1.5rem;
+    opacity : 0;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+
+.close-button:hover{
+    color : rgb(202, 202, 202);
+}
+
+.close-button.displaying{
+    opacity: 1;
+    pointer-events: all;
+}
+
+
 #main-menu.displaying{
     opacity: 1;
     pointer-events: all;
@@ -84,4 +109,6 @@
 #main-menu li a{
     text-decoration: none;
     color : white;
+    cursor: pointer;
+    pointer-events: all;
 }

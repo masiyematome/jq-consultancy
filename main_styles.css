@@ -10,6 +10,10 @@
     --blue-color : #0C2E8A;
 }
 
+html,body{
+    scroll-behavior:smooth;
+}
+
 button{
     border : none;
     outline : none;
@@ -24,6 +28,7 @@ button{
     justify-content: space-between;
     padding : 10px 15px 25px;
     box-shadow: 0 2px 8px -2px rgb(163, 163, 163);
+
 }
 
 .title-bar{
@@ -162,6 +167,7 @@ button{
     padding : 10px 25px;
     background-color: var(--blue-color);
     align-self: center;
+    text-decoration: none;
 }
 
 .landing-area .goto-about:hover{
@@ -172,4 +178,42 @@ button{
 
 .landing-area .middle-text{
     text-decoration: underline;
+}
+
+/**About us starts here**/
+
+.about-us{
+    padding : 50px 15px 25px;
+}
+
+.about-us img{
+    width : 100%;
+}
+
+.about-texts{
+    padding : 30px 0px 0px;
+}
+
+.about-texts h1{
+    color : var(--blue-color);
+    padding : 25px 0px;
+}
+
+.about-texts p{
+    padding : 0px 0px 25px;
+}
+
+.about-texts P:nth-of-type(1){
+    font-style: italic;
+    font-weight: 200;
+}
+
+.about-texts p:nth-of-type(2){
+    color : rgb(59, 59, 59);
+}
+
+.about-texts .fa{
+    font-size : 1.3rem;
+    color : var(--green-color);
+    padding : 3px;
 }

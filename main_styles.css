@@ -37,3 +37,51 @@
     padding : 5px;
     cursor: pointer;
 }
+
+.navbar-links{
+    position: absolute;
+    background-color : rgba(0,0,0,0.9);
+    width : 100%;
+    height : 100%;
+    opacity : 0;
+    pointer-events: none;
+    transition : all ease 0.5s;
+}
+
+.navbar-links.displaying{
+    opacity : 1;
+    pointer-events: all;
+}
+
+#main-menu{
+    background-color: rgba(0,0,0,0.4);
+    padding : 25px 8px;
+    position : absolute;
+    top : 0;
+    left : 0;
+    width : 0%;
+    height : 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition : all ease 0.5s;
+}
+
+#main-menu.displaying{
+    opacity: 1;
+    pointer-events: all;
+    width : 50%;
+}
+
+
+#main-menu{
+    list-style-type : none;
+}
+
+#main-menu li {
+    padding : 8px;
+}
+
+#main-menu li a{
+    text-decoration: none;
+    color : white;
+}

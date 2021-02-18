@@ -50,6 +50,10 @@ button{
     padding : 5px;
 }
 
+.nav-toggler .fa{
+    pointer-events: none;
+}
+
 .nav-toggler.hiding{
     opacity : 0;
     pointer-events: none;
@@ -95,6 +99,10 @@ button{
     background-color: transparent;
     font-size : 1.5rem;
     opacity : 0;
+}
+
+.close-button .fa{
+    pointer-events: none;
 }
 
 .close-button:hover{

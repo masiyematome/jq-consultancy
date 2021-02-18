@@ -242,27 +242,17 @@ header{
     position : fixed;
     right :3.2%;
     bottom : 3%;
+    transition: all ease 1s;
+}
+
+.back-to-top:hover{
+    background-color : var(--blue-color);
 }
 
 /**Services part of the project starts here**/
 
 .services{
     padding : 30px 25px;
-}
-
-.services h1{
-    position : relative;
-    display : inline;
-    padding : 8px 0px 15px;
-}
-
-.services h1::after{
-    content: "";
-    width : 30%;
-    border : 1px solid var(--green-color);
-    left : 0;
-    top : 100%;
-    position : absolute;
 }
 
 .services p{
@@ -296,24 +286,16 @@ header{
     color : #444444;
 }
 
+/**Team section starts here**/
+
+.team{
+    padding : 30px 15px;
+}
+
 /**Footer starts here**/
 
 .contact-us{
     padding : 30px 15px;
-}
-
-.contact-us h1{
-    position: relative;
-    padding : 8px 0px 15px;
-}
-
-.contact-us h1::after{
-    content : '';
-    width : 10%;
-    border : 1px solid var(--green-color);
-    position : absolute;
-    left : 0;
-    top : 100%;
 }
 
 .contact-us p{
@@ -365,4 +347,22 @@ header{
 
 .footer-band p:nth-of-type(2){
     font-size: 13px;
+}
+
+/**Green line under page-heading h1**/
+
+.page-heading{
+    position : relative;
+    display : inline;
+    padding : 8px 0px 15px;
+}
+
+.page-heading::after{
+    content: '';
+    border : 1px solid var(--green-color);
+    left : 0;
+    top : 100%;
+    position : absolute;
+    width : 20%;
+    
 }

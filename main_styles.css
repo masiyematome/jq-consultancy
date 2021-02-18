@@ -292,6 +292,39 @@ header{
     padding : 30px 15px;
 }
 
+.team-members{
+    padding : 70px 0px;
+}
+
+.team-member-info{
+    padding : 20px 25px 20px;
+    text-align: center;
+}
+
+.profile-image img{
+    width : 100%;
+}
+
+.profile-info{
+    background-color: var(--green-color);
+    color : white;
+    padding : 15px 0px;
+}
+
+.profile-info p{
+    padding : 8px 0px;
+    font-size : 13px;
+    font-style: italic;
+}
+
+.profile-info .fa{
+    padding : 0px 2px;
+}
+
+.social-icons a{
+    color : white;
+}
+
 /**Footer starts here**/
 
 .contact-us{

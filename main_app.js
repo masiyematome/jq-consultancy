@@ -15,6 +15,7 @@ navigationBar.addEventListener("click" , (event) => {
         navbarLinks.classList.add("displaying");
         closeButton.classList.add("displaying");
         navTogglerButton.classList.add("hiding");
+        document.body.style.overflow = "hidden";
     }
 
     else if(clickedButton.classList.contains("close-button")){
@@ -22,6 +23,7 @@ navigationBar.addEventListener("click" , (event) => {
         navbarLinks.classList.remove("displaying");
         closeButton.classList.remove("displaying");
         navTogglerButton.classList.remove("hiding");
+        document.body.style.overflow = "scroll";
     }
 })
 
@@ -31,6 +33,7 @@ links.forEach(link => {
             mainMenu.classList.remove("displaying");
             navbarLinks.classList.remove("displaying");
             navTogglerButton.classList.remove("hiding");
+            document.body.style.overflow = "scroll";
 
         }
     })

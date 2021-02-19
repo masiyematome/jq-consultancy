@@ -86,9 +86,6 @@ header{
 #main-menu{
     background: rgba(52, 59, 64, 0.9);
     padding : 25px 8px;
-    position : absolute;
-    top : 0;
-    left : 0;
     width : 0%;
     height : 100vh;
     opacity: 0;
@@ -202,10 +199,6 @@ header{
 
 /**About us starts here**/
 
-.about-us{
-    padding : 50px 15px 25px;
-}
-
 .about-us img{
     width : 100%;
 }
@@ -255,10 +248,6 @@ header{
 
 /**Services part of the project starts here**/
 
-.services{
-    padding : 30px 25px;
-}
-
 .services p{
     color : rgb(56, 56, 56);
     font-size : 14px; 
@@ -292,17 +281,13 @@ header{
 
 /**Team section starts here**/
 
-.team{
-    padding : 30px 15px;
-}
-
 .team-members{
-    padding : 70px 0px;
+    padding : 75px 0px 0px;
 }
 
 .team-member-info{
-    padding : 20px 25px 20px;
     text-align: center;
+    margin-top : 20px;
 }
 
 .profile-image img{
@@ -330,10 +315,6 @@ header{
 }
 
 /**Footer starts here**/
-
-.contact-us{
-    padding : 30px 15px;
-}
 
 .contact-us p{
     font-size : 14px;
@@ -391,7 +372,6 @@ header{
 .page-heading{
     position : relative;
     display : inline;
-    padding : 8px 0px 15px;
 }
 
 .page-heading::after{
@@ -404,13 +384,17 @@ header{
     
 }
 
+.section{
+    padding : 40px 15px;
+}
+
 /**Media Queries for responsiveness**/
 
 @media only screen and (min-width : 767px){
 
     .navigation-bar{
-        padding : 15px 0px;
-        justify-content: space-between;
+        padding : 0px 20px;
+        position: relative;
     }
 
     .nav-toggler,.close-button{
@@ -419,28 +403,27 @@ header{
 
     .title-bar{
         flex-basis: 45%;
-        padding : 0px 10px;
+        display: flex;
+        align-items: center;
+        padding : 0px 15px;
     }
 
     .navbar-links{
-        flex-basis: 55%;
+        position : relative;
+        flex-basis: 60%;
     }
 
     .navbar-links,#main-menu{
-        position : static;
         opacity : 1;
-        height : 0;
+        height : 10vh;
         background-color: transparent;
     }
 
     #main-menu{
         display : flex;
-        padding : 5px 0px;
+        justify-content: flex-end;
         width : 100%;
-    }
-
-    #main-menu li{
-        padding : 0px 8px;
+        align-items: center;
     }
 
     #main-menu li a{
@@ -482,4 +465,35 @@ header{
         flex-basis : 50%;
     }
 
+}
+
+@media only screen and (min-width : 1005px){
+
+    .about-us{
+        display : flex;
+        justify-content: space-between;
+    }
+
+    .image-holder{
+        flex-basis: 48%;
+        padding : 45px 0px 0px;
+    }
+
+    .image-holder img{
+        width : 100%;
+    }
+
+    .about-texts{
+        flex-basis: 48%;
+    }
+
+    .services-container{
+        display : grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap : 3%;
+    }
+
+    .team-members{
+        grid-template-columns: repeat(4,1fr);
+    }
 }

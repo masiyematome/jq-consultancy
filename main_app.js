@@ -4,7 +4,6 @@ const navTogglerButton = document.querySelector(".nav-toggler");
 const mainMenu = document.querySelector("#main-menu");
 const navbarLinks = document.querySelector(".navbar-links");
 const closeButton = document.querySelector(".close-button");
-const services = document.querySelectorAll(".service");
 const links = document.querySelectorAll("#main-menu a");
 
 navigationBar.addEventListener("click" , (event) => {

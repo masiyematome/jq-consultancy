@@ -5,7 +5,7 @@ const mainMenu = document.querySelector("#main-menu");
 const navbarLinks = document.querySelector(".navbar-links");
 const closeButton = document.querySelector(".close-button");
 const services = document.querySelectorAll(".service");
-const links = document.querySelectorAll("a");
+const links = document.querySelectorAll("#main-menu a");
 
 navigationBar.addEventListener("click" , (event) => {
     const clickedButton = event.target;
@@ -28,7 +28,14 @@ navigationBar.addEventListener("click" , (event) => {
 })
 
 links.forEach(link => {
+
+
     link.addEventListener("click", () => {
+
+        Array.from(links).forEach(individualKey => {
+            individualKey.classList.remove("active");
+        })
+
         if (mainMenu.classList.contains("displaying")) {
             mainMenu.classList.remove("displaying");
             navbarLinks.classList.remove("displaying");
@@ -36,5 +43,9 @@ links.forEach(link => {
             document.body.style.overflow = "scroll";
 
         }
+
+        link.classList.add("active");
+
     })
+
 })

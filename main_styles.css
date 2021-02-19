@@ -144,6 +144,10 @@ header{
     pointer-events: all;
 }
 
+#main-menu li a.active{
+    color : var(--green-color);
+}
+
 /**Main part of the project starts here**/
 
 /*Landing area*/

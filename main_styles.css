@@ -399,3 +399,83 @@ header{
     width : 20%;
     
 }
+
+/**Media Queries for responsiveness**/
+
+@media only screen and (min-width : 767px){
+
+    .navigation-bar{
+        padding : 15px 0px;
+        justify-content: space-between;
+    }
+
+    .nav-toggler,.close-button{
+        display : none;
+    }
+
+    .title-bar{
+        flex-basis: 45%;
+        padding : 0px 10px;
+    }
+
+    .navbar-links{
+        flex-basis: 55%;
+    }
+
+    .navbar-links,#main-menu{
+        position : static;
+        opacity : 1;
+        height : 0;
+        background-color: transparent;
+    }
+
+    #main-menu{
+        display : flex;
+        padding : 5px 0px;
+        width : 100%;
+    }
+
+    #main-menu li{
+        padding : 0px 8px;
+    }
+
+    #main-menu li a{
+        color : rgb(92, 84, 84);
+        padding : 5px;
+        font-size : 14px;
+        font-weight : 600;
+        transition : all ease 0.5s;
+    }
+
+    #main-menu li a:hover{
+        color : var(--green-color);
+    }
+
+    .team-members{
+        display: grid;
+        grid-template-columns: repeat(2,0.5fr);
+        grid-gap : 3%;
+    }
+
+    .team-member-info{
+        padding : 20px 0px 20px;
+    }
+
+    .contact-us,.services-container,.team,.about-us{
+        padding : 30px 35px;
+    }
+
+    .contact-details{
+        display : flex;
+    }
+
+    .contact-details .contact-detail{
+        border-right : 1px solid rgb(226, 226, 226);
+        padding : 15px 25px;
+    }
+
+    .phone{
+        flex-basis : 50%;
+    }
+
+}

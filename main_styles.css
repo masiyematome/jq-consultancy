@@ -390,7 +390,7 @@ header{
 
 /**Media Queries for responsiveness**/
 
-@media only screen and (min-width : 767px){
+@media only screen and (min-width : 830px){
 
     .navigation-bar{
         padding : 0px 20px;
@@ -402,7 +402,7 @@ header{
     }
 
     .title-bar{
-        flex-basis: 45%;
+        flex-basis: 50%;
         display: flex;
         align-items: center;
         padding : 0px 15px;
@@ -496,4 +496,19 @@ header{
     .team-members{
         grid-template-columns: repeat(4,1fr);
     }
+}
+
+@media only screen and (min-width : 1200px){
+    .navigation-bar{
+        padding : 0px 50px;
+    }
+
+    .title-bar{
+        padding : 0px;
+    }
+
+    .section{
+        padding : 40px 50px;
+    }
+
 }
